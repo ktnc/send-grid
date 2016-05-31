@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>Ktnc.SendGrid</id>
+        <version>0.0.3</version>
+        <authors>ysawabe</authors>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>SendMail Tool using SendGrid.</description>
+        <dependencies>
+            <dependency id="Sendgrid" version="6.3.4" />
+            <dependency id="NVelocity" version="1.0.3" />
+            <dependency id="WindowsAzure.Storage" version="7.0.0" />
+        </dependencies>
+        <frameworkAssemblies>
+            <frameworkAssembly assemblyName="System.Configuration" targetFramework="" />
+        </frameworkAssemblies>
+    </metadata>
+    <files>
+        <file src="content\app.config.install.xdt" target="content\app.config.install.xdt" />
+        <file src="content\web.config.install.xdt" target="content\web.config.install.xdt" />
+        <file src="..\Ktnc.SendGrid\bin\Release\Ktnc.SendGrid.dll" target="lib\Ktnc.SendGrid.dll" />
+    </files>
+</package>
