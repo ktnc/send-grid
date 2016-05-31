@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata>
         <id>Ktnc.SendGrid</id>
-        <version>0.0.3</version>
+        <version>0.0.4</version>
         <authors>ysawabe</authors>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>SendMail Tool using SendGrid.</description>
