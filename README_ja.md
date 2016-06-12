@@ -1,6 +1,8 @@
 # 概要
 AzureStorage上に置かれたテンプレートファイルを使ってメールを送信します。メール送信はSendGridサービスを利用します。テンプレートはVelocityで記述することができます。
 
+![コンポーネント図](https://raw.githubusercontent.com/ktnc/send-grid/develop/doc/ktnc.send-grid.component.png)
+
 Velocityの使い方は[オフィシャルサイト](http://velocity.apache.org/engine/devel/user-guide.html)を参照してください。
 
 # インストール

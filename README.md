@@ -1,6 +1,8 @@
 # Overview
 Send E-Mail using the template file that is placed on the AzureStorage. E-Mail sent will use the SendGrid service. The template can be written in Velocity.
 
+![component diagram](https://raw.githubusercontent.com/ktnc/send-grid/develop/doc/ktnc.send-grid.component.png)
+
 How to use Velocity is please refer to the [official site](http://velocity.apache.org/engine/devel/user-guide.html).
 
 # Install
