@@ -17,6 +17,7 @@ PM> Install-Package Ktnc.SendGrid
 ## AzureStorageの接続設定とSendGridの設定
 「App.config(またはWeb.config)」の「appSettins」にAzureStorageの接続先設定とSendGridの設定を追加してください。
 
+### App.config(またはWeb.config)
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <configuration>
@@ -45,11 +46,31 @@ PM> Install-Package Ktnc.SendGrid
 AzureStorageのコンテナにテンプレートファイルを追加します。テンプレートは「Plane」と「HTML」を用意します。  
 「test」という名前のテンプレートを追加する場合は「test.vm」と「test-html.vm」をコンテナに追加します。
 
+### test.vm
+```
+Dear $name
+#if($message)
+message: $message
+#end
+Thank you for reading.
+```
+
+### test-html.vm
+```html
+<div>
+  <h1>Dear $name</h1>
+#if($message)
+  <p>message: $message</p>
+#end
+  </p>Thank you for reading.</p>
+<div>
+```
 
 ## 件名とテンプレート名の設定
 App.config(またはWeb.config)に件名とテンプレート名を追加します。  
 下記のコードはAzureStorageのコンテナにある「test.vm」と「test-html.vm」というテンプレートを利用する例です。
 
+### App.config(またはWeb.config)
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <configuration>

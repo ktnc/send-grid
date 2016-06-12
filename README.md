@@ -17,6 +17,7 @@ PM> Install-Package Ktnc.SendGrid
 ## AzureStorage Setting and SendGrid Setting
 Add the settings that AzureStorage Setting and SendGrid Setting to "appSettins" in "App.config (or Web.config)".
 
+### App.config (or Web.config)
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <configuration>
@@ -45,10 +46,31 @@ Add the settings that AzureStorage Setting and SendGrid Setting to "appSettins" 
 Add the template file to AzureStorage of container. Please prepare templates that are "HTML" and "Plane".
 Add "test.vm" and "test-html.vm" to the container if you want to add a template named "test".
 
+### test.vm
+```
+Dear $name
+#if($message)
+message: $message
+#end
+Thank you for reading.
+```
+
+### test-html.vm
+```html
+<div>
+  <h1>Dear $name</h1>
+#if($message)
+  <p>message: $message</p>
+#end
+  </p>Thank you for reading.</p>
+<div>
+```
+
 ## Settings Subject and TemplateName
 Add the subject and the template name in the App.config (or Web.config).
 The following code is an example of using templates that are "test.vm" and "test-html.vm" in the container of AzureStorage.
 
+### App.config (or Web.config)
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <configuration>
