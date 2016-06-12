@@ -62,7 +62,7 @@ Thank you for reading.
 #if($message)
   <p>message: $message</p>
 #end
-  </p>Thank you for reading.</p>
+  <p>Thank you for reading.</p>
 <div>
 ```
 
