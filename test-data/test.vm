@@ -1,0 +1,5 @@
+こんにちは$nameさん
+#if($message)
+メッセージ: $message とのことです。
+#end
+はろはろだよ。

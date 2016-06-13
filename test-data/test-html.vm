@@ -1,0 +1,7 @@
+<div>
+  <h1>こんにちは$nameさん</h1>
+#if($message)
+    <p>メッセージ: $message とのことです。</p>
+#end
+    </p>はろはろだよ。</p>
+<div>
