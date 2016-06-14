@@ -5,6 +5,10 @@ Send E-Mail using the template file that is placed on the AzureStorage. E-Mail s
 
 How to use Velocity is please refer to the [official site](http://velocity.apache.org/engine/devel/user-guide.html).
 
+# Why Ktnc.SendGrid was made ?
+SendGrid has the function of the template engine in the standard. However, such as "If" statement can not be controlled.  
+"Ktnc.SendGrid" provides the function of the powerful template engine that uses Velocity.
+
 # Install
 To install Ktnc.SendGrid, run the following command in the Package Manager Console.
 

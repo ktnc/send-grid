@@ -5,6 +5,10 @@ AzureStorage上に置かれたテンプレートファイルを使ってメー�
 
 Velocityの使い方は[オフィシャルサイト](http://velocity.apache.org/engine/devel/user-guide.html)を参照してください。
 
+# 背景
+SendGridはテンプレートエンジンの機能を持っています。しかし「if」文などは制御できません。  
+「Ktnc.SendGrid」はVelocityを利用した強力なテンプレートエンジンの機能を提供します。
+
 # インストール
 パッケージマネージャから下記のコマンドでインストールできます。
 
